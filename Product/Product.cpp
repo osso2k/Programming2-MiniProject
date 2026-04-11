@@ -2,9 +2,9 @@
 #include <string>
 
 Product::Product(std::string name, double price, int quantity) {
-  name = name;
-  price = price;
-  quantity = quantity;
+  this->name = name;
+  this->price = price;
+  this->quantity = quantity;
 }
 bool Product::setName(std::string new_name) {
   name = new_name;

@@ -1,20 +1,9 @@
+#include "Product/Product.h"
 #include <iostream>
-#include <list>
-#include <string>
 
-class Item {
-private:
-  std::string name;
-  double price;
-  int quantity;
-
-public:
-  Item(std::string name, double price, int q) {
-    this->name = name;
-    this->price = price;
-    this->quantity = q;
-  };
-};
-class ShoppingCart {};
-
-int main() {}
+int main() {
+  Product p1("Jacket", 23, 1);
+  std::cout << p1.getName() << '\n';
+  p1.setName("Hat");
+  std::cout << p1.getName() << '\n';
+}
